@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: myAllowSpecificOrigins,
         builder =>
         {
-            builder.WithOrigins("https://cifrado-theta.vercel.app/","http://localhost:4200")
+            builder.WithOrigins("https://cifrado-theta.vercel.app","http://localhost:4200")
             .AllowAnyMethod()
             .AllowAnyHeader();
         });
